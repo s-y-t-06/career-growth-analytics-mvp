@@ -1,0 +1,11 @@
+user_id,predicted_risk,predicted_class,action_name,channel,reason
+7accd51b-5cc2-57d0-986c-14a0ea1d5337,0.7760559718493538,1,send_reengagement_message,in_app,high churn risk without marketing consent
+428387bf-1c71-542f-9d68-55b76fe22a02,0.838935040775659,1,send_reengagement_message,email,high churn risk with marketing consent
+14be18d2-4bab-5761-b539-6eab4716ce7a,0.7227175302593091,1,send_reengagement_message,email,high churn risk with marketing consent
+0fd3b4a7-6ae5-5bab-9b27-31bbfb22d08b,0.7757754116972438,1,send_reengagement_message,in_app,high churn risk without marketing consent
+91e3d11e-5341-5cea-8784-408106fb7f77,0.7059825999341814,1,send_reengagement_message,email,high churn risk with marketing consent
+c993aad0-c33b-5914-995c-8311b1dcb1cf,0.3853792883539839,0,complete_onboarding,in_app,onboarding not completed
+7a9e174f-0889-5f14-a7ad-0a7ced67b9ec,0.2741831226040741,0,view_job_recommendations,in_app,job recommendations not viewed
+f0458768-9a9a-5902-8961-ac03237b26d2,0.34379243273111715,0,complete_onboarding,in_app,onboarding not completed
+07234249-5754-54cd-b00a-42b999b54371,0.3045206574394942,0,upload_resume,in_app,resume not uploaded
+7983a0f2-08f4-5ce5-bd52-8f9b6f9850aa,0.15435199144258593,0,save_relevant_job,in_app,job viewed but not saved

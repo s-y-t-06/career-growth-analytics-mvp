@@ -1,0 +1,7 @@
+{
+  "user_count": 1000,
+  "seed": 42,
+  "event_count": 17856,
+  "churn_rate": 0.39,
+  "experiment_id": "exp_onboarding_v1"
+}

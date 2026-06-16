@@ -1,0 +1,388 @@
+{
+  "logistic_coefficients": [
+    {
+      "feature": "num__num_core_actions_completed",
+      "coefficient": -0.20040868857235716,
+      "abs_coefficient": 0.20040868857235716
+    },
+    {
+      "feature": "num__job_save",
+      "coefficient": -0.17927847375457237,
+      "abs_coefficient": 0.17927847375457237
+    },
+    {
+      "feature": "num__profile_complete",
+      "coefficient": -0.17720231735748326,
+      "abs_coefficient": 0.17720231735748326
+    },
+    {
+      "feature": "num__growth_task_complete",
+      "coefficient": -0.1476097506249651,
+      "abs_coefficient": 0.1476097506249651
+    },
+    {
+      "feature": "num__job_detail_view_count",
+      "coefficient": 0.14501754456037746,
+      "abs_coefficient": 0.14501754456037746
+    },
+    {
+      "feature": "cat__acquisition_channel_content_marketing",
+      "coefficient": -0.14295049888780237,
+      "abs_coefficient": 0.14295049888780237
+    },
+    {
+      "feature": "cat__user_intent_level_high",
+      "coefficient": -0.14084206981093572,
+      "abs_coefficient": 0.14084206981093572
+    },
+    {
+      "feature": "cat__device_type_tablet",
+      "coefficient": -0.13199797228564075,
+      "abs_coefficient": 0.13199797228564075
+    },
+    {
+      "feature": "num__max_events_in_session",
+      "coefficient": -0.1290760808278088,
+      "abs_coefficient": 0.1290760808278088
+    },
+    {
+      "feature": "num__onboarding_complete",
+      "coefficient": -0.12284830902560581,
+      "abs_coefficient": 0.12284830902560581
+    },
+    {
+      "feature": "cat__acquisition_channel_referral",
+      "coefficient": 0.11755511247918596,
+      "abs_coefficient": 0.11755511247918596
+    },
+    {
+      "feature": "cat__country_IN",
+      "coefficient": 0.11565635068375966,
+      "abs_coefficient": 0.11565635068375966
+    },
+    {
+      "feature": "cat__timezone_Asia/Kolkata",
+      "coefficient": 0.11565635068375966,
+      "abs_coefficient": 0.11565635068375966
+    },
+    {
+      "feature": "cat__timezone_Asia/Tokyo",
+      "coefficient": -0.11549069325901261,
+      "abs_coefficient": 0.11549069325901261
+    },
+    {
+      "feature": "cat__country_JP",
+      "coefficient": -0.11549069325901261,
+      "abs_coefficient": 0.11549069325901261
+    }
+  ],
+  "permutation_importance": [
+    {
+      "feature": "num_core_actions_completed",
+      "importance_mean": 0.021515772502651055,
+      "importance_std": 0.009177456592617008
+    },
+    {
+      "feature": "job_save",
+      "importance_mean": 0.019984398381984535,
+      "importance_std": 0.00627158447541619
+    },
+    {
+      "feature": "profile_complete",
+      "importance_mean": 0.014356207995307046,
+      "importance_std": 0.0067542771021648
+    },
+    {
+      "feature": "growth_task_complete",
+      "importance_mean": 0.011378591733274013,
+      "importance_std": 0.007161917290858023
+    },
+    {
+      "feature": "max_events_in_session",
+      "importance_mean": 0.010918799606621243,
+      "importance_std": 0.007692989220322252
+    },
+    {
+      "feature": "onboarding_complete",
+      "importance_mean": 0.008307865361972044,
+      "importance_std": 0.005508683000975638
+    },
+    {
+      "feature": "onboarding_started",
+      "importance_mean": 0.007751205061720212,
+      "importance_std": 0.005161750369840232
+    },
+    {
+      "feature": "job_detail_view_count",
+      "importance_mean": 0.00745046493687157,
+      "importance_std": 0.007501849293129361
+    },
+    {
+      "feature": "user_intent_level",
+      "importance_mean": 0.0029213660851188485,
+      "importance_std": 0.004059643945164848
+    },
+    {
+      "feature": "resume_upload",
+      "importance_mean": 0.002787873537615726,
+      "importance_std": 0.005210673759976354
+    },
+    {
+      "feature": "num_days_active",
+      "importance_mean": 0.0023356858545008686,
+      "importance_std": 0.002415581752723717
+    },
+    {
+      "feature": "hours_since_last_action_at_cutoff",
+      "importance_mean": 0.002304621937581386,
+      "importance_std": 0.002116368794323134
+    },
+    {
+      "feature": "return_visit_count",
+      "importance_mean": 0.0016074724488645109,
+      "importance_std": 0.0022128859690580156
+    },
+    {
+      "feature": "job_recommendation_view",
+      "importance_mean": 0.00109318311531873,
+      "importance_std": 0.0016138271144184994
+    },
+    {
+      "feature": "first_day_event_count",
+      "importance_mean": 0.0007551930616551572,
+      "importance_std": 0.0014941047682037307
+    }
+  ],
+  "top_15_features": [
+    {
+      "feature": "num_core_actions_completed",
+      "importance_mean": 0.021515772502651055,
+      "importance_std": 0.009177456592617008
+    },
+    {
+      "feature": "job_save",
+      "importance_mean": 0.019984398381984535,
+      "importance_std": 0.00627158447541619
+    },
+    {
+      "feature": "profile_complete",
+      "importance_mean": 0.014356207995307046,
+      "importance_std": 0.0067542771021648
+    },
+    {
+      "feature": "growth_task_complete",
+      "importance_mean": 0.011378591733274013,
+      "importance_std": 0.007161917290858023
+    },
+    {
+      "feature": "max_events_in_session",
+      "importance_mean": 0.010918799606621243,
+      "importance_std": 0.007692989220322252
+    },
+    {
+      "feature": "onboarding_complete",
+      "importance_mean": 0.008307865361972044,
+      "importance_std": 0.005508683000975638
+    },
+    {
+      "feature": "onboarding_started",
+      "importance_mean": 0.007751205061720212,
+      "importance_std": 0.005161750369840232
+    },
+    {
+      "feature": "job_detail_view_count",
+      "importance_mean": 0.00745046493687157,
+      "importance_std": 0.007501849293129361
+    },
+    {
+      "feature": "user_intent_level",
+      "importance_mean": 0.0029213660851188485,
+      "importance_std": 0.004059643945164848
+    },
+    {
+      "feature": "resume_upload",
+      "importance_mean": 0.002787873537615726,
+      "importance_std": 0.005210673759976354
+    },
+    {
+      "feature": "num_days_active",
+      "importance_mean": 0.0023356858545008686,
+      "importance_std": 0.002415581752723717
+    },
+    {
+      "feature": "hours_since_last_action_at_cutoff",
+      "importance_mean": 0.002304621937581386,
+      "importance_std": 0.002116368794323134
+    },
+    {
+      "feature": "return_visit_count",
+      "importance_mean": 0.0016074724488645109,
+      "importance_std": 0.0022128859690580156
+    },
+    {
+      "feature": "job_recommendation_view",
+      "importance_mean": 0.00109318311531873,
+      "importance_std": 0.0016138271144184994
+    },
+    {
+      "feature": "first_day_event_count",
+      "importance_mean": 0.0007551930616551572,
+      "importance_std": 0.0014941047682037307
+    }
+  ],
+  "user_explanations": [
+    {
+      "user_id": "f804a57a-bb82-5ae3-a781-06c90ac725a7",
+      "predicted_risk": 0.361198,
+      "predicted_class": 0,
+      "actual_label": 0,
+      "positive_factors": [
+        {
+          "feature": "num__job_detail_view_count",
+          "contribution": 0.379771
+        },
+        {
+          "feature": "num__profile_complete",
+          "contribution": 0.143282
+        },
+        {
+          "feature": "num__resume_upload",
+          "contribution": 0.07972
+        },
+        {
+          "feature": "cat__acquisition_channel_campus_event",
+          "contribution": 0.079147
+        },
+        {
+          "feature": "num__hours_since_last_action_at_cutoff",
+          "contribution": 0.069959
+        }
+      ],
+      "negative_factors": [
+        {
+          "feature": "num__growth_task_complete",
+          "contribution": -0.219196
+        },
+        {
+          "feature": "num__job_save",
+          "contribution": -0.209815
+        },
+        {
+          "feature": "num__last_2_days_event_count",
+          "contribution": -0.16109
+        },
+        {
+          "feature": "num__onboarding_complete",
+          "contribution": -0.151825
+        },
+        {
+          "feature": "cat__device_type_tablet",
+          "contribution": -0.131998
+        }
+      ],
+      "disclaimer": "Associations captured by the model, not causal effects."
+    },
+    {
+      "user_id": "ae2ac9af-e59c-512d-8c6c-17d00c2781c3",
+      "predicted_risk": 0.181174,
+      "predicted_class": 0,
+      "actual_label": 0,
+      "positive_factors": [
+        {
+          "feature": "num__unique_event_type_count",
+          "contribution": 0.117091
+        },
+        {
+          "feature": "num__job_detail_view_count",
+          "contribution": 0.112264
+        },
+        {
+          "feature": "num__last_2_days_event_count",
+          "contribution": 0.08779
+        },
+        {
+          "feature": "cat__country_US",
+          "contribution": 0.071657
+        },
+        {
+          "feature": "cat__timezone_America/New_York",
+          "contribution": 0.071657
+        }
+      ],
+      "negative_factors": [
+        {
+          "feature": "num__num_core_actions_completed",
+          "contribution": -0.372161
+        },
+        {
+          "feature": "num__growth_task_complete",
+          "contribution": -0.219196
+        },
+        {
+          "feature": "num__profile_complete",
+          "contribution": -0.219152
+        },
+        {
+          "feature": "num__job_save",
+          "contribution": -0.209815
+        },
+        {
+          "feature": "num__onboarding_complete",
+          "contribution": -0.151825
+        }
+      ],
+      "disclaimer": "Associations captured by the model, not causal effects."
+    },
+    {
+      "user_id": "681d6fa1-78d5-5bf2-b278-7f26a9b47da4",
+      "predicted_risk": 0.448055,
+      "predicted_class": 1,
+      "actual_label": 0,
+      "positive_factors": [
+        {
+          "feature": "num__job_save",
+          "contribution": 0.153186
+        },
+        {
+          "feature": "num__profile_complete",
+          "contribution": 0.143282
+        },
+        {
+          "feature": "num__onboarding_complete",
+          "contribution": 0.099402
+        },
+        {
+          "feature": "num__resume_upload",
+          "contribution": 0.07972
+        },
+        {
+          "feature": "num__hours_since_last_action_at_cutoff",
+          "contribution": 0.056385
+        }
+      ],
+      "negative_factors": [
+        {
+          "feature": "num__growth_task_complete",
+          "contribution": -0.219196
+        },
+        {
+          "feature": "cat__user_intent_level_high",
+          "contribution": -0.140842
+        },
+        {
+          "feature": "num__last_2_days_event_count",
+          "contribution": -0.105783
+        },
+        {
+          "feature": "cat__acquisition_channel_organic_search",
+          "contribution": -0.096042
+        },
+        {
+          "feature": "num__onboarding_started",
+          "contribution": -0.075969
+        }
+      ],
+      "disclaimer": "Associations captured by the model, not causal effects."
+    }
+  ]
+}

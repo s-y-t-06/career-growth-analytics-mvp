@@ -1,0 +1,43 @@
+{
+  "categorical_features": [
+    "acquisition_channel",
+    "country",
+    "device_type",
+    "user_intent_level",
+    "career_stage",
+    "onboarding_variant",
+    "language",
+    "timezone"
+  ],
+  "numeric_features": [
+    "signup_hour",
+    "signup_day_of_week",
+    "marketing_consent",
+    "onboarding_started",
+    "onboarding_complete",
+    "profile_complete",
+    "resume_upload",
+    "job_recommendation_view",
+    "job_save",
+    "growth_task_complete",
+    "career_report_generate",
+    "num_core_actions_completed",
+    "num_sessions",
+    "num_user_actions",
+    "num_days_active",
+    "num_email_sent",
+    "num_push_sent",
+    "num_in_app_sent",
+    "avg_events_per_session",
+    "max_events_in_session",
+    "total_user_actions_in_sessions",
+    "unique_event_type_count",
+    "first_day_event_count",
+    "last_2_days_event_count",
+    "hours_to_first_action",
+    "hours_since_last_action_at_cutoff",
+    "ai_assistant_interaction_count",
+    "job_detail_view_count",
+    "return_visit_count"
+  ]
+}

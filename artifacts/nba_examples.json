@@ -1,0 +1,82 @@
+[
+  {
+    "user_id":"7accd51b-5cc2-57d0-986c-14a0ea1d5337",
+    "predicted_risk":0.7760559718,
+    "predicted_class":1,
+    "action_name":"send_reengagement_message",
+    "channel":"in_app",
+    "reason":"high churn risk without marketing consent"
+  },
+  {
+    "user_id":"428387bf-1c71-542f-9d68-55b76fe22a02",
+    "predicted_risk":0.8389350408,
+    "predicted_class":1,
+    "action_name":"send_reengagement_message",
+    "channel":"email",
+    "reason":"high churn risk with marketing consent"
+  },
+  {
+    "user_id":"14be18d2-4bab-5761-b539-6eab4716ce7a",
+    "predicted_risk":0.7227175303,
+    "predicted_class":1,
+    "action_name":"send_reengagement_message",
+    "channel":"email",
+    "reason":"high churn risk with marketing consent"
+  },
+  {
+    "user_id":"0fd3b4a7-6ae5-5bab-9b27-31bbfb22d08b",
+    "predicted_risk":0.7757754117,
+    "predicted_class":1,
+    "action_name":"send_reengagement_message",
+    "channel":"in_app",
+    "reason":"high churn risk without marketing consent"
+  },
+  {
+    "user_id":"91e3d11e-5341-5cea-8784-408106fb7f77",
+    "predicted_risk":0.7059825999,
+    "predicted_class":1,
+    "action_name":"send_reengagement_message",
+    "channel":"email",
+    "reason":"high churn risk with marketing consent"
+  },
+  {
+    "user_id":"c993aad0-c33b-5914-995c-8311b1dcb1cf",
+    "predicted_risk":0.3853792884,
+    "predicted_class":0,
+    "action_name":"complete_onboarding",
+    "channel":"in_app",
+    "reason":"onboarding not completed"
+  },
+  {
+    "user_id":"7a9e174f-0889-5f14-a7ad-0a7ced67b9ec",
+    "predicted_risk":0.2741831226,
+    "predicted_class":0,
+    "action_name":"view_job_recommendations",
+    "channel":"in_app",
+    "reason":"job recommendations not viewed"
+  },
+  {
+    "user_id":"f0458768-9a9a-5902-8961-ac03237b26d2",
+    "predicted_risk":0.3437924327,
+    "predicted_class":0,
+    "action_name":"complete_onboarding",
+    "channel":"in_app",
+    "reason":"onboarding not completed"
+  },
+  {
+    "user_id":"07234249-5754-54cd-b00a-42b999b54371",
+    "predicted_risk":0.3045206574,
+    "predicted_class":0,
+    "action_name":"upload_resume",
+    "channel":"in_app",
+    "reason":"resume not uploaded"
+  },
+  {
+    "user_id":"7983a0f2-08f4-5ce5-bd52-8f9b6f9850aa",
+    "predicted_risk":0.1543519914,
+    "predicted_class":0,
+    "action_name":"save_relevant_job",
+    "channel":"in_app",
+    "reason":"job viewed but not saved"
+  }
+]

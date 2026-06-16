@@ -1,0 +1,155 @@
+[
+  {
+    "user_id": "f804a57a-bb82-5ae3-a781-06c90ac725a7",
+    "predicted_risk": 0.361198,
+    "predicted_class": 0,
+    "actual_label": 0,
+    "positive_factors": [
+      {
+        "feature": "num__job_detail_view_count",
+        "contribution": 0.379771
+      },
+      {
+        "feature": "num__profile_complete",
+        "contribution": 0.143282
+      },
+      {
+        "feature": "num__resume_upload",
+        "contribution": 0.07972
+      },
+      {
+        "feature": "cat__acquisition_channel_campus_event",
+        "contribution": 0.079147
+      },
+      {
+        "feature": "num__hours_since_last_action_at_cutoff",
+        "contribution": 0.069959
+      }
+    ],
+    "negative_factors": [
+      {
+        "feature": "num__growth_task_complete",
+        "contribution": -0.219196
+      },
+      {
+        "feature": "num__job_save",
+        "contribution": -0.209815
+      },
+      {
+        "feature": "num__last_2_days_event_count",
+        "contribution": -0.16109
+      },
+      {
+        "feature": "num__onboarding_complete",
+        "contribution": -0.151825
+      },
+      {
+        "feature": "cat__device_type_tablet",
+        "contribution": -0.131998
+      }
+    ],
+    "disclaimer": "Associations captured by the model, not causal effects."
+  },
+  {
+    "user_id": "ae2ac9af-e59c-512d-8c6c-17d00c2781c3",
+    "predicted_risk": 0.181174,
+    "predicted_class": 0,
+    "actual_label": 0,
+    "positive_factors": [
+      {
+        "feature": "num__unique_event_type_count",
+        "contribution": 0.117091
+      },
+      {
+        "feature": "num__job_detail_view_count",
+        "contribution": 0.112264
+      },
+      {
+        "feature": "num__last_2_days_event_count",
+        "contribution": 0.08779
+      },
+      {
+        "feature": "cat__country_US",
+        "contribution": 0.071657
+      },
+      {
+        "feature": "cat__timezone_America/New_York",
+        "contribution": 0.071657
+      }
+    ],
+    "negative_factors": [
+      {
+        "feature": "num__num_core_actions_completed",
+        "contribution": -0.372161
+      },
+      {
+        "feature": "num__growth_task_complete",
+        "contribution": -0.219196
+      },
+      {
+        "feature": "num__profile_complete",
+        "contribution": -0.219152
+      },
+      {
+        "feature": "num__job_save",
+        "contribution": -0.209815
+      },
+      {
+        "feature": "num__onboarding_complete",
+        "contribution": -0.151825
+      }
+    ],
+    "disclaimer": "Associations captured by the model, not causal effects."
+  },
+  {
+    "user_id": "681d6fa1-78d5-5bf2-b278-7f26a9b47da4",
+    "predicted_risk": 0.448055,
+    "predicted_class": 1,
+    "actual_label": 0,
+    "positive_factors": [
+      {
+        "feature": "num__job_save",
+        "contribution": 0.153186
+      },
+      {
+        "feature": "num__profile_complete",
+        "contribution": 0.143282
+      },
+      {
+        "feature": "num__onboarding_complete",
+        "contribution": 0.099402
+      },
+      {
+        "feature": "num__resume_upload",
+        "contribution": 0.07972
+      },
+      {
+        "feature": "num__hours_since_last_action_at_cutoff",
+        "contribution": 0.056385
+      }
+    ],
+    "negative_factors": [
+      {
+        "feature": "num__growth_task_complete",
+        "contribution": -0.219196
+      },
+      {
+        "feature": "cat__user_intent_level_high",
+        "contribution": -0.140842
+      },
+      {
+        "feature": "num__last_2_days_event_count",
+        "contribution": -0.105783
+      },
+      {
+        "feature": "cat__acquisition_channel_organic_search",
+        "contribution": -0.096042
+      },
+      {
+        "feature": "num__onboarding_started",
+        "contribution": -0.075969
+      }
+    ],
+    "disclaimer": "Associations captured by the model, not causal effects."
+  }
+]

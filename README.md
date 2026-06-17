@@ -65,7 +65,7 @@ career-growth-analytics-mvp/
 ## 本地运行
 
 ```powershell
-cd C:\Users\Administrator\Desktop\career-growth-analytics-mvp-export
+cd career-growth-analytics-mvp
 python -m venv .venv
 .venv\Scripts\python.exe -m pip install -e ".[dev]"
 $env:PYTHONPATH = "src"

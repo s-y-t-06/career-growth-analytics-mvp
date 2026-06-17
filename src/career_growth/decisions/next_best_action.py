@@ -12,12 +12,9 @@ import pandas as pd
 
 from career_growth import config
 
-# Business threshold for triggering high-risk reengagement actions.
-# This is intentionally higher than the model classification threshold
-# (selected by validation F1, typically around 0.41). The model threshold
-# balances precision and recall for the binary churn label, while this
-# operational threshold reduces over-messaging by only triggering win-back
-# actions for users with very high predicted risk.
+# 业务干预阈值：仅对极高流失风险用户触发挽回动作。
+# 该值故意高于模型分类阈值（validation F1 选择，约 0.41）。
+# 模型阈值用于预测分类，业务阈值用于控制运营触达强度，避免过度打扰中等风险用户。
 HIGH_RISK_ACTION_THRESHOLD: float = 0.70
 
 

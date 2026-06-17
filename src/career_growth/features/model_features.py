@@ -1,4 +1,4 @@
-"""Model feature engineering using only pre-cutoff data."""
+"""模型特征工程：只使用预测截止日前可观测的数据。"""
 
 from datetime import timedelta
 
@@ -56,12 +56,12 @@ ALL_FEATURE_COLUMNS: list[str] = CATEGORICAL_FEATURES + NUMERIC_FEATURES
 
 
 def _user_cutoff(user: pd.Series) -> pd.Timestamp:
-    """Return the prediction cutoff for a user."""
+    """返回单个用户的预测截止时间。"""
     return user["signup_timestamp"] + timedelta(days=config.PREDICTION_CUTOFF_DAY)
 
 
 def _build_static_features(users: pd.DataFrame) -> pd.DataFrame:
-    """Build static user features."""
+    """构建用户静态画像特征。"""
     records = []
     for _, user in users.iterrows():
         signup = pd.to_datetime(user["signup_timestamp"])
@@ -87,7 +87,7 @@ def _build_static_features(users: pd.DataFrame) -> pd.DataFrame:
 def _build_variant_features(
     users: pd.DataFrame, experiment_assignments: pd.DataFrame
 ) -> pd.DataFrame:
-    """Build experiment-variant features."""
+    """构建实验分组特征。"""
     if experiment_assignments.empty:
         variants = pd.DataFrame(
             {"user_id": users["user_id"].values, "onboarding_variant": "unknown"}
@@ -116,14 +116,14 @@ def _build_variant_features(
 
 
 def _hours_between(start: pd.Timestamp, end: pd.Timestamp) -> float:
-    """Return the number of hours between two timestamps."""
+    """计算两个时间戳之间相差的小时数。"""
     return (end - start).total_seconds() / 3600.0
 
 
 def _build_behavior_features(
     users: pd.DataFrame, events: pd.DataFrame
 ) -> pd.DataFrame:
-    """Build behavior features using only events before the prediction cutoff."""
+    """仅使用预测截止日前的事件构建行为特征。"""
     records = []
     for _, user in users.iterrows():
         user_id = user["user_id"]

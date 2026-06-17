@@ -64,12 +64,19 @@ career-growth-analytics-mvp/
 
 ## 本地运行
 
+克隆仓库并进入目录：
+
 ```powershell
+git clone https://github.com/s-y-t-06/career-growth-analytics-mvp.git
 cd career-growth-analytics-mvp
+```
+
+创建虚拟环境并安装依赖：
+
+```powershell
 python -m venv .venv
+.venv\Scripts\python.exe -m pip install --upgrade pip
 .venv\Scripts\python.exe -m pip install -e ".[dev]"
-$env:PYTHONPATH = "src"
-.venv\Scripts\python.exe -m pytest tests -q
 ```
 
 生成样例数据：
@@ -100,6 +107,26 @@ $env:PYTHONPATH = "src"
 $env:PYTHONPATH = "src"
 .venv\Scripts\python.exe -m nbconvert --execute --to notebook --inplace notebooks\lifecycle_analysis.ipynb
 .venv\Scripts\python.exe -m nbconvert --execute --to notebook --inplace notebooks\churn_modeling.ipynb
+```
+
+## 测试
+
+### Smoke test（快速验证）
+
+用于评审快速确认项目能跑。主要覆盖核心数据生成、校验、分析和推荐逻辑，通常在 30-60 秒内完成。
+
+```powershell
+$env:PYTHONPATH = "src"
+.venv\Scripts\python.exe -m pytest tests\test_data_generation.py tests\test_validation.py tests\test_analytics.py tests\test_features.py tests\test_decisions.py -q
+```
+
+### Full test（完整测试）
+
+完整运行全部测试，包含建模、特征工程、训练脚本和 NBA 集成测试，耗时较长（约 8-10 分钟，具体取决于机器）。
+
+```powershell
+$env:PYTHONPATH = "src"
+.venv\Scripts\python.exe -m pytest tests -q
 ```
 
 ## 当前模型结果

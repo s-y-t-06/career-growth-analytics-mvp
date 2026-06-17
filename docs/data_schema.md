@@ -13,9 +13,10 @@
 | device_type | 设备类型 |
 | user_intent_level | 求职/成长意向强度 |
 | career_stage | 职业阶段 |
+| marketing_consent | 是否允许营销触达 |
 | language | 语言 |
 | timezone | 时区 |
-| marketing_consent | 是否允许营销触达 |
+| initial_plan_type | 初始计划类型 |
 
 ## events.csv
 
@@ -25,10 +26,15 @@
 | --- | --- |
 | event_id | 事件唯一标识 |
 | user_id | 用户 ID |
-| event_timestamp | 事件发生时间 |
-| event_name | 事件名称 |
-| event_source | 事件来源 |
 | session_id | 会话 ID |
+| event_name | 事件名称 |
+| event_timestamp | 事件发生时间 |
+| event_properties | 事件属性（JSON） |
+| page_name | 页面名称 |
+| platform | 平台 |
+| event_source | 事件来源 |
+| experiment_id | 关联实验 ID |
+| variant_id | 关联实验版本 |
 
 核心事件包括 `signup`、`onboarding_complete`、`profile_complete`、`resume_upload`、`job_recommendation_view`、`job_save`、`growth_task_complete` 和 `career_report_generate`。
 
@@ -38,10 +44,15 @@
 
 | 字段 | 含义 |
 | --- | --- |
-| user_id | 用户 ID |
 | experiment_id | 实验 ID |
+| user_id | 用户 ID |
 | variant_id | 实验版本 |
-| assigned_at | 分组时间 |
+| assignment_time | 分组时间 |
+| experiment_name | 实验名称 |
+| experiment_type | 实验类型 |
+| traffic_allocation | 流量分配比例 |
+| is_exposed | 是否已曝光 |
+| is_converted | 是否已转化 |
 
 ## interventions.csv
 
@@ -49,11 +60,15 @@
 
 | 字段 | 含义 |
 | --- | --- |
-| intervention_id | 干预记录 ID |
+| message_id | 消息唯一标识 |
 | user_id | 用户 ID |
+| action_name | 干预动作名称 |
 | channel | 干预渠道 |
-| template_id | 干预模板 |
-| sent_at | 发送时间 |
+| send_time | 发送时间 |
+| open_time | 打开时间 |
+| click_time | 点击时间 |
+| conversion_time | 转化时间 |
+| experiment_id | 关联实验 ID |
 
 ## labels.csv
 
@@ -62,6 +77,8 @@
 | 字段 | 含义 |
 | --- | --- |
 | user_id | 用户 ID |
-| churned | 是否流失 |
-| label_window_start | 标签观察窗口开始 |
-| label_window_end | 标签观察窗口结束 |
+| signup_timestamp | 注册时间 |
+| prediction_cutoff | 预测截止时间（注册后第 7 天） |
+| label_start | 标签观察窗口开始（第 8 天） |
+| label_end | 标签观察窗口结束（第 21 天） |
+| is_churned | 是否流失 |

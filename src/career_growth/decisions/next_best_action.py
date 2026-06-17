@@ -12,6 +12,14 @@ import pandas as pd
 
 from career_growth import config
 
+# Business threshold for triggering high-risk reengagement actions.
+# This is intentionally higher than the model classification threshold
+# (selected by validation F1, typically around 0.41). The model threshold
+# balances precision and recall for the binary churn label, while this
+# operational threshold reduces over-messaging by only triggering win-back
+# actions for users with very high predicted risk.
+HIGH_RISK_ACTION_THRESHOLD: float = 0.70
+
 
 def compute_user_state(user_id: str, events: pd.DataFrame, cutoff: pd.Timestamp) -> dict[str, Any]:
     """Compute the lifecycle state for a user up to a cutoff timestamp."""
@@ -66,7 +74,7 @@ def recommend_next_action(
     # When no model score is available, we only flag users who completed
     # onboarding but have become inactive; new users are routed to onboarding.
     high_risk = (
-        (churn_risk_score is not None and churn_risk_score >= 0.70)
+        (churn_risk_score is not None and churn_risk_score >= HIGH_RISK_ACTION_THRESHOLD)
         or (
             churn_risk_score is None
             and state["onboarding_completed"]
